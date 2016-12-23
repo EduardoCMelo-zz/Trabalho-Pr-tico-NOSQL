@@ -1,0 +1,31 @@
+TRABALHO PRÁTICO – NOSQL
+
+
+TEMA: Beneficiários do programa Bolsa Família do Governo federal do Brasil.
+
+
+CONTEXTO E APLICAÇÃO:
+
+	A escolha do tema foi motivada pela análise dos estados que possuem maior número de beneficiários no programa e por ter base de dados aberta e disponível em arquivo, dessa forma, facilitando o processo de aprendizado.
+
+
+METODOLOGIA:
+
+	A coleta, como dito anteriormente, foi através de arquivo no formato CSV, disponível no site:
+  
+  http://www.portaldatransparencia.gov.br/downloads/mensal.asp?c=BolsaFamiliaFolhaPagamento 
+  
+	A importação e o processamento foi realizado no MongoDB.
+
+
+RESULTADOS:
+
+	O tempo das consultas foi razoavelmente rápido, visto que a base é bem grande e possui milhões de registros.
+  
+	Através da análise pude concluir que o Top 5 dos estados com maior número de beneficiários, baseado em dezembro de 2015, são: BA, SP, MG, PE e CE.
+  
+ 
+CONCLUSÃO:
+
+	Foi muito interessante testar um pouco da utilidade do MongoDB, se mostrou uma alternativa bem útil para trabalhar com grande volume de dados e para análises específicas com um tempo reduzido e sem problemas com performance.
+
