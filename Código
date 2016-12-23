@@ -1,0 +1,16 @@
+# Trabalho-Pr-tico-NOSQL
+
+c:\Program Files\MongoDB\Server\3.4\bin>mongo
+MongoDB Enterprise > .mongoimport
+MongoDB Enterprise > exit
+c:\Program Files\MongoDB\Server\3.4\bin>mongoimport /d trabalhoNosql /c Nosql /type tsv /file "C:\Users\Eduardo Melo\Desktop\BolsaFamiliaFolhaPagamento.csv" /headerline
+
+c:\Program Files\MongoDB\Server\3.4\bin>mongo
+MongoDB Enterprise > use trabalhoNosql
+
+
+-- Para fazer um Ranking dos estados com maior número de beneficiários do bolsa família --
+
+db.Nosql.aggregate ([{$group :{"_id" : "$UF", count: {$sum :1}}},{ $sort : { count : -1, _id : 1 } },{ $skip : 0 },])
+
+
